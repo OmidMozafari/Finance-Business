@@ -1,0 +1,39 @@
+section {
+    width: 100%;
+    height: 500px;
+    background-image: url(slide_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bck-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 120px;
+    color: white;
+}
+
+#backround-nav h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.backround-list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px; /* فاصله بین آیتم‌ها مثل عکس */
+}
+
+.backround-list ul li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.backround-list ul li a:hover,
+.backround-list ul li a.active {
+    border-bottom: 2px solid #A4c639; /* خط سبز زیر "Home" */
+}
