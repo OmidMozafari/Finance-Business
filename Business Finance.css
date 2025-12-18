@@ -5,6 +5,7 @@
     --paracolor:#666666;
     --whitecolor:#fff;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -428,11 +429,11 @@ main .bck-contents button{
     gap: 30px;
     margin-top: 140px;
 }
-.know-bck-img{
-    background-image: url(more-info.jpg);
-    width: 100%;
+
+.know-texts{
+    padding: 45px 45px 45px 30px;
 }
-.get-to-know-about-company .know-container .know-texts span{
+.get-to-know-about-company .know-container .know-texts > span{
     color: var(--paracolor);
     text-transform: uppercase;
     font-size: 15px;
@@ -441,15 +442,26 @@ main .bck-contents button{
     display: block;
 }
 .know-titles{
-    font-size: 30px;
-    font-weight: 600;
     margin-bottom: 35px;
 }
+.know-titles h2{
+    color: var(--Bcolor);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25 ;
+}
+
+.know-titles h2 span{
+    color: var(--Gcolor);    
+}
+
 .know-para{
     margin-bottom: 30px;
     font-size: 14px;
     color: #666666;
     line-height: 30px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 #know-title-first{
 display: inline-block;
@@ -469,4 +481,99 @@ margin-right: 10px;
     display: inline-block;
     transition: all 0.3s;
     border: none;
+}
+
+.what-they-say-about-us{
+    background-color: var(--Graycolor);
+    padding: 140px 0px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 140px 0px;
+}
+
+.what-they-say-about-us .what-texts h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.what-they-say-about-us .what-texts h2 > span{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Gcolor);
+}
+.what-texts{
+    text-align: center;
+    padding: 0px 15px;
+    width: 100%;
+}
+.what-texts > span{
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1px;
+}
+.what-names{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7.5%;
+    text-align: center;
+    column-gap: 30px;
+    
+    
+
+}
+.what-names-contents{
+    background-color: var(--whitecolor);
+    padding: 30px;
+    width: 90%;
+    margin-top: 90px;
+}
+.what-names-contents h4{
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e1e1e;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+}
+.what-names-contents span{
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #a4c639;
+}
+.what-names-contents p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--paracolor);
+    line-height: 30px;
+}
+.callback-section{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+}
+.callback-texts{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.callback-texts h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Bcolor);
+}
+.callback-texts h2 .callback-span{
+     font-size: 36px;
+    font-weight: 600;
+    color: var(--Gcolor);
+}
+.callback-texts span{
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--paracolor);
+    letter-spacing: 1px;
 }
