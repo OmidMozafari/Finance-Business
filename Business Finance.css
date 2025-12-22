@@ -13,7 +13,6 @@
 }
 body{
     font-family: "poppins", sans-serif;
-    height: 6000px;
 }
 .container{
     width: 100%;
@@ -60,12 +59,17 @@ nav .date-call .clock a{
     display: inline-block;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+}
+nav i{
+    margin-right: 5px;
 }
 nav .date-call .call a{
     text-decoration: none;
     font-size: 14px;
     color: white;
     display: inline-block;
+    font-weight: 600;
 } 
 nav .icons {
     width: 30.91%;
@@ -146,6 +150,15 @@ nav .icons #behance{
     margin: 5px 0px 0px;
     text-decoration: none;
 }
+/* this is the style for the clicked pages */
+.backround-list ul a.active {
+    color: var(--Gcolor);
+    border-bottom: 3px solid var(--Gcolor);
+}
+
+
+/* this is the style for the clicked pages */
+
 .backround-list ul a:active{
     color: var(--Gcolor);
     border-bottom: 3px solid var(--Gcolor);
@@ -195,6 +208,8 @@ nav .icons #behance{
 #Home-html .bck-contents p a{
     text-decoration: none;
 }
+
+/* first button of the page  */
 #Home-html .bck-contents button{
     width: 22.42%;
     color:white;
@@ -206,41 +221,79 @@ nav .icons #behance{
     display: inline-block;
     border: none;
 }
+
+/* first button of the page  */
+
+/* first button of the page hover section  */
+
+#Home-html .bck-contents button:hover{
+ color: var(--Gcolor);
+ background-color: var(--whitecolor);
+ cursor: pointer;
+}
+
+/* first button of the page hover section  */
+
+/* a link text on the first page of the home page with its hover part  */
+
 #Ltext-bck-contents{
     color:#007bff;
 }
-#green-bar{
+#Ltext-bck-contents:hover{
+    color:#0557af;
+}
+
+/* a link text on the first page of the home page with its hover part  */
+
+/* all green bar section styles here */
+
+.green-bar{
     width: 100%;
-    height: 21vh;
     color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 40px 0px;
+    justify-content: space-between;
+    padding: 40px 7.5%;
     background-color:var(--Gcolor);
 }
-#green-bar h4{
+.green-bar h4{
     font-size: 22px;
     font-weight: 600;
-    line-height: 40px;
 }
-#green-bar span{
+.green-bar span{
     font-size: 15px;
     font-weight: 400;
+    display: inline-block;
     margin-top: 10px;
 }
-#green-bar button{
-    border: 2px solid white;
-    border-radius: 45%;
-    background-color: var(--Gcolor);
-    color: white;
+.green-bar-container-button{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.green-bar-container-button a{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
     font-size: 13px;
-    transition: all 0.3s;
     text-transform: uppercase;
     font-weight: 700;
     padding: 10px 28px;
     border-radius: 30px;
-    margin-top: 10px;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-top: 12px;
+    text-decoration: none;
 }
+.green-bar-container-button a:hover{
+    color: var(--Gcolor);
+    background-color: var(--whitecolor);
+}
+
+/* all green bar section styles here */
+
+
+/* all cards styles of home.html here */
 .container-2{
     padding: 0px 7.5%;
     margin: 0px auto;
@@ -325,9 +378,19 @@ nav .icons #behance{
     transition: all 0.3s;
     border: none;
 }
+.cards-items button:hover{
+    color: var(--Gcolor);
+    background-color: var(--whitecolor);
+    cursor: pointer;
+}
 .cards-texts{
     padding: 30px;
 }
+
+/* all cards styles of home.html here */
+
+
+/* solutions for business growth styles */
 .solution{
     width: 100%;
     display: flex;
@@ -431,6 +494,10 @@ nav .icons #behance{
     color: var(--whitecolor);
     letter-spacing: 0.5px;
 }
+
+/* solutions for business growth styles */
+
+/* get to know about our company section style */
 .get-to-know-about-company{
     width:100%;
     justify-content: center;
@@ -501,6 +568,17 @@ margin-right: 10px;
     border: none;
 }
 
+.know-container button:hover{
+    color: var(--Gcolor);
+    background-color: var(--whitecolor);
+    cursor: pointer;
+}
+
+/* get to know about our company section style */
+
+
+/* what they say about us section */
+
 .what-they-say-about-us{
     background-color: var(--Graycolor);
     padding: 140px 0px;
@@ -538,9 +616,6 @@ margin-right: 10px;
     padding: 0px 7.5%;
     text-align: center;
     column-gap: 30px;
-    
-    
-
 }
 .what-names-contents{
     background-color: var(--whitecolor);
@@ -568,6 +643,11 @@ margin-right: 10px;
     color: var(--paracolor);
     line-height: 30px;
 }
+
+/* what they say about us section */
+
+/* Request a call back style zone */
+
 .callback-section{
     margin-top: 140px;
     display: flex;
@@ -669,10 +749,21 @@ margin-right: 10px;
     text-shadow: none;
     cursor: pointer;
 }
+.callback-form fieldset input[type="submit"]:hover{
+    background-color: var(--whitecolor);
+    color: var(--Gcolor);
+    cursor: pointer;
+
+}
+
+/* Request a call back style zone */
+
+/* partners logos */
+
 .partners{
     margin-top: 140px;
     background-color: var(--Graycolor);
-    padding: 60px 120px;
+    padding: 60px 7.5%;
 }
 .partners-container{
     max-width: 100%;
@@ -686,6 +777,11 @@ margin-right: 10px;
     vertical-align: middle;
     border-style: none;
 }
+
+/* partners logos */
+
+/* footer section */
+
 footer{
     display: flex;
     background-color: #232323;
@@ -821,6 +917,11 @@ footer a{
     background-color: var(--whitecolor);
     color: var(--Gcolor);
 }
+
+/* footer section */
+
+/* sub footer section */
+
 .sub-footer{
     background-color: #343434;
     text-align: center;
@@ -849,6 +950,9 @@ input,
 textarea {
     font-family: "Poppins", sans-serif;
 }
+
+/* sub footer section */
+
 
 /* we are done with the design of the home page */
 
@@ -942,6 +1046,11 @@ textarea {
     border: none;
     width: 139.45px;
 }
+.left-side-container-of-first-section-about-us button:hover{
+    background-color: var(--whitecolor);
+    color: var(--Gcolor);
+    cursor: pointer;
+}
 .right-side-container-of-first-section-about-us{
     width: 100%;
     min-height: 1px;
@@ -990,10 +1099,8 @@ textarea {
 }
 .about-us-cards-items{
     position: relative;
-    max-width: 33%;
+    max-width: 30%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
     background-color: var(--whitecolor);
 }
 .about-us-cards-items-text-container{
@@ -1002,7 +1109,7 @@ textarea {
     box-sizing: border-box
 }
 .about-us-cards-images{
-  
+  width: 100%;
 }
 .about-us-cards-images img{
     width: 100%;
@@ -1037,9 +1144,215 @@ textarea {
 
 /* About-Us.HTML */
 
+/* Our services html.......... here we apply some designs related to the our services html page */
+.services{
+   margin-top: 140px;
+   padding: 0px 8%; 
+   display: flex;
+   justify-content: space-between;
+   column-gap: 30px;
+}
+.services-leftside-containers{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 33.2%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.services-containers{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.services-containers-link-container a{
+    text-transform: capitalize;
+    width: 100%;
+    padding: 30px 30px;
+    align-items: center;
+    background-color: var(--Gcolor);
+    font-size: 20px;
+    color: #121212;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-containers-link-container a i{
+    font-size: 14px;
+    color: var(--Bcolor);
+}
+.services-containers-link-container a:active{
+    text-transform: capitalize;
+    width: 100%;
+    padding: 30px 30px;
+    background-color: var(--Gcolor);
+    font-size: 20px;
+    color: var(--whitecolor);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side-container{
+    position: relative;
+    width: 66.8%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.right-side-container img{
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    border-style: none;
+    
+    
+}
+.right-side-container h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+}
+.right-side-container p{
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 0px;
+    line-height: 30px;
+}
+
+/* request a call back section for our services html */
+
+.our-services-html-callback-section{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 7.5%;
+    border-top: 1px solid #eee;
+    padding-top: 140px;
+    margin-top: 140px;
+}
+.our-services-html-callback-texts{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.our-services-html-callback-texts h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Bcolor);
+}
+.our-services-html-callback-texts h2 .callback-span{
+     font-size: 36px;
+    font-weight: 600;
+    color: var(--Gcolor);
+}
+#our-services-html-callback-underline-span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--paracolor);
+    letter-spacing: 1px;
+    margin-top: 15px;
+} 
+.our-services-html-callback-form{
+    width: 100%;
+    background-color: var(--Gcolor);
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+.our-services-html-callback-form form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+.form-inputs{
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: #8b2f2f;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 35px;
+    background-color:var(--whitecolor);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.our-services-html-callback-section .our-services-html-callback-form textarea{
+    width: 100%;
+    border-radius: 20px;
+    height: 120px;
+    max-height: 200px;
+    min-height: 120px;
+    padding: 15px;
+    color: #6a6a6a;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    outline: none;
+}
+.our-services-html-callback-section .our-services-html-callback-form fieldset{
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.our-services-html-callback-section .our-services-html-callback-form fieldset input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.our-services-html-callback-section .our-services-html-callback-form fieldset input[type="submit"]:hover{
+    background-color: var(--whitecolor);
+    color: var(--Gcolor);
+}
+
+/* request a call back section for our services html */
+
+
+/* Our services html.......... here we apply some designs related to the our services html page */
+
 
 
 /* Contact Us html design */
+
 #Contact-Us-html{
     width: 100%;
     height: 75vh;
@@ -1049,3 +1362,196 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* contact information section */
+.contact-icons-and-adresses{
+    margin-top: 140px;
+    padding: 0px 7.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-icons-and-adresses-containers{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contact-icons-and-adresses-items{
+    padding: 60px 30px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.contact-icons-and-adresses-items h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+.contact-icons-and-adresses-items p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--paracolor);
+    line-height: 30px;
+}
+.contact-icons-and-adresses-items a{
+    font-weight: 600;
+    color: var(--Gcolor);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+   
+.contact-icons-and-adresses-items i{
+    color: var(--Gcolor);
+    font-size: 48px;
+}
+/* contact information section */
+
+
+/* call back section  */
+
+.contact-us-html-callback-section{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 140px 7.5%;
+    background-color: var(--Graycolor);
+}
+.contact-us-html-callback-texts{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.contact-us-html-callback-texts h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Bcolor);
+}
+.contact-us-html-callback-texts h2 > span{
+    color: var(--Gcolor);
+}
+.contact-us-html-callback-texts h2 .callback-span{
+     font-size: 36px;
+    font-weight: 600;
+    color: var(--Gcolor);
+}
+#contact-us-html-callback-underline-span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--paracolor);
+    letter-spacing: 1px;
+    margin-top: 15px;
+} 
+.contact-us-html-callback-form{
+    width: 100%;
+    background-color: var(--Graycolor);
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+.contact-us-html-callback-form form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+.form-inputs{
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: #8b2f2f;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 35px;
+    background-color:var(--whitecolor);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.contact-us-html-callback-section .contact-us-html-callback-form textarea{
+    width: 100%;
+    border-radius: 20px;
+    height: 120px;
+    max-height: 200px;
+    min-height: 120px;
+    padding: 15px;
+    color: #6a6a6a;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    outline: none;
+}
+.contact-us-html-callback-section .contact-us-html-callback-form fieldset{
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-us-html-callback-section .contact-us-html-callback-form fieldset input[type="submit"]{
+    background-color: var(--Gcolor);
+    color: var(--whitecolor);
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+.contact-us-html-callback-section .contact-us-html-callback-form fieldset input[type="submit"]:hover{
+    background-color: var(--whitecolor);
+    color: var(--Gcolor);
+    cursor: pointer;
+}
+/* call back section */
+
+
+
+/* partners logos */
+
+.contact-us-html-partners{
+    margin-top: 0;
+    background-color: var(--Graycolor);
+    padding: 60px 120px;
+}
+.contact-us-html-partners-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.contact-us-html-partners-logos{
+    max-width: 156px;
+    margin: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* partners logos */
+
+
+
+
+/* Contact Us html design */
+
+
