@@ -13,7 +13,7 @@
 }
 body{
     font-family: "poppins", sans-serif;
-    height: 8000px;
+    height: 6000px;
 }
 .container{
     width: 100%;
@@ -70,10 +70,10 @@ nav .date-call .call a{
 nav .icons {
     width: 30.91%;
     text-align: right;
-    display: flex;        /* اضافه کن */
+    display: flex;      
     justify-content: flex-end;
-    align-items: center;  /* خیلی مهم */
-    gap: 0;               /* اگر gap نمی‌خوای */
+    align-items: center;  
+    gap: 0;               
 }
 
 nav .icons a {
@@ -94,18 +94,21 @@ nav .icons a {
 nav .icons #behance{
     border-right: 1px solid rgba(255,255,255,.25);
 }
-main{
+#Home-html{
     width: 100%;
     height: 100vh;
     background-image:url(slide_01.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-main .bck-nav-container{
+.bck-nav-container{
     display: flex;
     align-items: center;
     width: 100%;
     padding: 0px 15px;
 }
-main #backround-nav{
+#backround-nav{
     padding: 20px 0px;
     display: flex;
     align-items: center;
@@ -113,22 +116,19 @@ main #backround-nav{
     margin: 0px 105.5px;
     color: white;
 }
-main #backround-nav h2 a{
+#backround-nav h2 a{
     width: 225.47px;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
 }
-main .backround-list{
+.backround-list{
     width: 65.75%;
     display: flex;
     justify-content: center;
     padding-left: 40px;
-
-
-
 }
-main .backround-list ul{
+.backround-list ul{
     width: 64.34%;
     padding: 20px 0px;
     display: flex;
@@ -138,7 +138,7 @@ main .backround-list ul{
     justify-content: space-between;
     align-items: center;
 }
-main .backround-list ul a{
+.backround-list ul a{
     color:white;
     list-style-type: none;
     padding: 8px;
@@ -146,38 +146,56 @@ main .backround-list ul a{
     margin: 5px 0px 0px;
     text-decoration: none;
 }
-main .bck-contents{
+.backround-list ul a:active{
+    color: var(--Gcolor);
+    border-bottom: 3px solid var(--Gcolor);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+.backround-list ul a:hover{
+    color: var(--Gcolor);
+    border-bottom: 3px solid var(--Gcolor);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+#Home-html .bck-contents{
     width: 75%;
     padding: 0px 169px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
-main .bck-contents h6{
+#Home-html .bck-contents h6{
     font-size: 22px;
     margin: 0px 0px 15px;
     text-transform: uppercase;
     color: var(--Gcolor);
 }
-main .bck-contents h4{
+#Home-html .bck-contents h4{
     color: white;
     font-size: 44px;
     text-transform: uppercase;
     line-height: 50px;
 }
-main .bck-contents #bck-title{
+#Home-html .bck-contents #bck-title{
     margin: 0px 0px 30px;
 }
-main .bck-contents p{
+#Home-html .bck-contents p{
     color: white;
     line-height: 30px;
     margin: 0px 0px 40px;
 
 }
-main .bck-contents p a{
+#Home-html .bck-contents p a{
     text-decoration: none;
 }
-main .bck-contents button{
+#Home-html .bck-contents button{
     width: 22.42%;
     color:white;
     background-color: var(--Gcolor);
@@ -670,20 +688,28 @@ margin-right: 10px;
 }
 footer{
     display: flex;
-    justify-content: space-between;
     background-color: #232323;
     padding: 80px 0px;
     color: var(--whitecolor);
     padding-left: 7.5%;
     padding-right: 7.5%;
 }
-footer a, p{
+footer a{
     font-size: 14px;
+}
+.footer-para{
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 0;
 }
 .footer-containers{
     display: flex;
     flex-direction: column;
     max-width: 25%;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .footer-containers a, ul{
    text-decoration: none;
@@ -709,7 +735,15 @@ footer a, p{
     background-color: var(--whitecolor);
     display: inline-block;
     margin-right: 5px;
+    border-radius: 50%
+    
 }
+/* footer icons hover */
+.social-medias-items li a:hover {
+    background-color: var(--Gcolor);
+    border-radius: 50% 
+}
+/* footer icons hover */
 
 .social-medias-items li a{
     width: 34px;
@@ -717,12 +751,301 @@ footer a, p{
     display: inline-block;
     line-height: 34px;
     text-align: center;
-    background-color: #fff;
     color: #232323;
     transition: all 0.3s;
-    border-radius: 50%;
+}
+/* footer Useful link links */
+.useful-links-link{
+    margin-bottom: 13px;
+}
+.useful-links-link a:hover, .Additional-links-link a:hover{
+    color: var(--Gcolor);
+}
+.Additional-links-link{
+    margin-bottom: 13px;
+}
+/* footer Useful link links */
+
+
+/* footer form and input section */
+.footer-containers form input:not([type="submit"]){
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: #aaa !important;
+    background-color: #343434;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+.footer-containers form textarea{
+    width: 100%;
+    border-radius: 20px;
+    height: 120px;
+    max-height: 200px;
+    min-height: 120px;
+    display: inline-block;
+    padding: 15px;
+    color: #aaa;
+    background-color: #343434;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+.footer-button-item{
+    color: #fff;
+    background-color: #a4c639;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+.footer-button-item:hover{
+    background-color: var(--whitecolor);
+    color: var(--Gcolor);
+}
+.sub-footer{
+    background-color: #343434;
+    text-align: center;
+    padding: 25px 0px;
+    width: 100%;
+}
+.sub-footer p{
+    color: var(--whitecolor);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.sub-footer p a{
+    color: var(--whitecolor);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+}
+button,
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
 }
 
-footer .footer-containers .social-medias li a{
-    color: red;
+/* we are done with the design of the home page */
+
+/* now it is time for another page which is  */
+
+/* About-Us.HTML */
+#About-Us-html{
+    width: 100%;
+    height: 75vh;
+    background-image:url(page-heading-bg.jpg) ;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.backround-about-us-contents{
+    text-align: center;
+    color: var(--whitecolor);
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    padding-top: 140px;
+}
+.backround-about-us-contents h1{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+.backround-about-us-contents span{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    display: block;
+}
+.first-section-about-us{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 8.7%;
+    padding-right: 8.7%;
+    width: 100%;
+}
+.left-side-container-of-first-section-about-us{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-self: center !important;
+}
+.left-side-container-of-first-section-about-us span{
+    text-transform: uppercase;
+    font-size: 15px;
+    color:  var(--paracolor);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+.left-side-container-of-first-section-about-us h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.left-side-container-of-first-section-about-us h2 em{
+    color: var(--Gcolor);
+}
+.left-side-container-of-first-section-about-us p{
+    font-size: 14px;
+    color:  var(--paracolor);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.left-side-container-of-first-section-about-us button{
+    background-color: var(--Gcolor);
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+    width: 139.45px;
+}
+.right-side-container-of-first-section-about-us{
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* second-section-about-us it is cards section */
+.second-section-about-us{
+    background-color: var(--Graycolor);
+    margin-top: 140px;
+    margin-bottom: -140px;
+    padding: 120px 0px;
+    
+}
+.NO1-container-of-second-section-about-us{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.NO1-container-of-second-section-about-us h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Bcolor);
+}
+.NO1-container-of-second-section-about-us h2 > em{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Gcolor);
+    font-style: normal;
+}
+.NO1-container-of-second-section-about-us span{
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1px;
+}
+.NO2-container-of-about-us-cards-container{
+    display: flex;
+    width: 100%;
+    padding-right: 8.7%;
+    padding-left: 8.7%;
+    justify-content: space-between;
+}
+.about-us-cards-items{
+    position: relative;
+    max-width: 33%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: var(--whitecolor);
+}
+.about-us-cards-items-text-container{
+    background-color: var(--whitecolor);
+    padding: 30px;
+    box-sizing: border-box
+}
+.about-us-cards-images{
+  
+}
+.about-us-cards-images img{
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-us-cards-items h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 10px;
+}
+.about-us-cards-items span{
+    color: var(--Gcolor);
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+.about-us-cards-items p{
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* second-section-about-us it is cards section */
+
+/* About-Us.HTML */
+
+
+
+/* Contact Us html design */
+#Contact-Us-html{
+    width: 100%;
+    height: 75vh;
+    background-image:url(page-heading-bg.jpg) ;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
